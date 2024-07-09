@@ -1,0 +1,176 @@
+body {   /*THIS APPLIES TO EVERYTHING IN THE WEBSITE*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align items to the top */
+    padding-top: 20px; /* Add padding to create space from the top */
+    background-image: url("images/bgimage.jpg");
+  
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    color: white; /* Sets text color to white for better contrast (optional) */
+}
+
+.navbar /*menubar*/ {
+    background-color: #006400; /* Dark green */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;  /*ensures the nav bar(menubar) is right at the very top of the screen*/
+    z-index: 1000; /*ensuring navbar appears above other content on the page*/
+}
+
+.menu {  /*ALL THE MENU STUFF IS ABOUT THE MENUBAR*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #004d00; /* Slightly darker green */
+}
+
+section {
+    padding: 20px;
+    margin: 80px 20px 20px; /* Adjusted margin to account for fixed navbar */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    }
+
+section h1, section h2 {
+    color: #333;
+}
+
+section p {
+    color: #666;
+}
+
+.form-container {    /* this helps makes the small box that contains Username and Password*/
+    display: flex; /* sets the form to the flexbox layout which allows items to align and distribute space within container efficiently */
+    flex-direction: column;  /* elements in the box are arranged vertically */
+    gap:10px; /* space between the form elements e.g. input, button etc. */
+    max-width: 450px;
+    margin: 0 auto;  /*centers form horizontally*/
+    padding: 20px; /*padding creates space inside the form container and px is pixels*/
+    border-radius: 8px; /*rounded corners*/
+    background-color: #fff; /*hex code for White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+}
+
+.form-container label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-container input[ type= "text"],
+.form-container input[type = "password"] {
+    width: 100%; /* Use 100% to make input boxes full width within their container */
+    padding: 12px; /* Increase padding for more spacious input boxes */
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* PREVIOUSLY: width: 80%; margin: 0 auto;} /*centers the username and password boxes within the sign up box*/*/
+
+.form-container button {
+    padding: 12px; /* Match the padding with input boxes */
+    background-color: #006400; /* Dark green color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add space above the button */
+    width: 100%; /* Ensure the button is the same width as the input boxes */
+    font-size: 16px; /* Match the font size with input boxes */
+}
+
+.form-container button:hover {
+    background-color: #004d00; /* Slightly darker green */
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fff; /*This is the border color when you hover over user/pass*/
+
+}
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px; 
+}
+
+.search-container button {
+    background-color: #045a06;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+
+#suggestions{
+    color: black;
+    font-size: 14px;
+    font-size: bold;
+
+}
+
+#meals{  /* Trying to make the meals header black font and in the center but is not working */
+
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+
+
+ 
+}  
+
+#profile {
+color: black;
+}
+
+
+
+
